@@ -1,0 +1,80 @@
+# Site settings
+title: "Java for TypeScript Developers: Migration Guide"
+url: "https://jam-mar.github.io"
+
+# Course metadata
+course:
+  title: "Java for TypeScript Developers"
+  subtitle: "A Migration Guide"
+  version: "1.0"
+  author: "James Marriott"
+  difficulty_levels:
+    - "beginner"
+    - "intermediate"
+    - "advanced"
+  keywords: ["Java", "TypeScript", "Migration", "Web Development"]
+  repository: "https://github.com/jam-mar/java_for_typescript_developers"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+permalink: pretty
+
+# Collections for chapters
+collections:
+  chapters:
+    output: true
+    permalink: /:collection/:path
+
+# Default layouts for different content types
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "chapters"
+    values:
+      layout: "lesson"
+  - scope:
+      path: "chapters"
+    values:
+      layout: "lesson"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-toc
+
+# Exclude files from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - unused/
+
+# Include files
+include:
+  - _pages
+
+# Markdown settings
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+# Navigation
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "Getting Started"
+    url: "/chapters/00-introduction/"
