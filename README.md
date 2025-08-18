@@ -1,3 +1,1 @@
-# Java for Typescript Developers
-
 This comprehensive course is designed to help JavaScript, TypeScript, and Node.js developers transition to the Java ecosystem. The course combines theoretical learning with practical application through a real-world project implementation.
