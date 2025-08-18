@@ -22,14 +22,14 @@ This course is designed to help web developers transition smoothly from JavaScri
 
 Ready to begin your Java journey? Start with our comprehensive foundation module:
 
-**[Module 1: Foundations – From the Node.js Event Loop to the JVM]({{ '/modules/01-foundations/' | relative_url }})**
+**[Module 1: Foundations – From the Node.js Event Loop to the JVM]({{ 'chapters/01-foundations/' | relative_url }})**
 
 This foundational module includes everything you need to understand about transitioning from Node.js/TypeScript to Java enterprise development.
 
 ### Course Structure
 
-- **[Module 1: Foundations – From the Node.js Event Loop to the JVM]({{ '/modules/01-foundations/' | relative_url }})** - Java language fundamentals, JVM understanding, build tools, and development environment setup _(Coming Soon)_
-- **[Module 2: Spring Framework Fundamentals]({{ '/modules/02-spring-fundamentals/' | relative_url }})** - Dependency injection, application bootstrapping, REST controllers, and configuration management _(Coming Soon)_
+- **[Module 1: Foundations – From the Node.js Event Loop to the JVM]({{ 'chapters/01-foundations/' | relative_url }})** - Java language fundamentals, JVM understanding, build tools, and development environment setup _(Coming Soon)_
+- **[Module 2: Spring Framework Fundamentals]({{ 'chapters/02-spring-fundamentals/' | relative_url }})** - Dependency injection, application bootstrapping, REST controllers, and configuration management _(Coming Soon)_
 
 #### Module 1: Foundations
 
@@ -66,4 +66,4 @@ This course is paired with a hands-on **Enterprise Task Management System** buil
 
 **🚀 Currently Available:**
 
-_Ready to make the transition? [Start with Module 1: Foundations]({{ '/modules/01-foundations/' | relative_url }}) and begin your journey from Node.js/TypeScript to Java enterprise development!_
+_Ready to make the transition? [Start with Module 1: Foundations]({{ 'chapters/01-foundations/' | relative_url }}) and begin your journey from Node.js/TypeScript to Java enterprise development!_
