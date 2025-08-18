@@ -2,4 +2,5 @@ This comprehensive course is designed to help JavaScript, TypeScript, and Node.j
 
 # Getting Started
 
-[Module 1: Foundations](https://jam-mar.github.io/Java_for_TypeScript_Developers/modules/chapters/0
+[Index](https://jam-mar.github.io/Java_for_TypeScript_Developers/index.html)
+[Module 1: Foundations](https://jam-mar.github.io/Java_for_TypeScript_Developers/modules/chapters/01-foundations.html)
