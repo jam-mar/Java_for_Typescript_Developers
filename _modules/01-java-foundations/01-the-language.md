@@ -62,19 +62,67 @@ Integer boxedAge = 25; // Wrapper class for int
 
 // Final variables (like const in JavaScript)
 final String API_KEY = "secret123";
+API_KEY = "newSecret"; // ❌ Compile error! Cannot reassign final variable
 final List<String> items = new ArrayList<>(); // List is final, but contents can change
+
+// To create multiple variables of the same type, use commas
+int x = 5, y = 10, z = 15;
+// To check the types of these variables, you can use the instanceof operator. This is a binary operator in Java used for type comparison. It returns true if the object on the left-hand side is an instance of the type on the right-hand side, or if it is an instance of a class that inherits from the type on the right-hand side. Otherwise, it returns false.
+System.out.println(x instanceof Integer); // true
+System.out.println(y instanceof Integer); // true
+System.out.println(z instanceof Integer); // true
+
+// You can also assign the same value to multiple variables in one line
+int a = b = c = 5;
+System.out.println(a + b + c);
 ```
+
+#### Java Identifier Rules
+
+Java identifiers (names for variables, methods, classes, etc.) must follow these rules:
+
+1. Must start with a letter, underscore (\_), or dollar sign ($).
+2. Can contain letters, digits, underscores, and dollar signs.
+3. Cannot be a reserved keyword (e.g., `class`, `public`, `static`).
+4. Case-sensitive (e.g., `myVar` and `myvar` are different).
+
+#### Casing Conventions
+
+1. **camelCase**: Used for variable and method names (e.g., `myVariable`, `calculateTotal`).
+2. **PascalCase**: Used for class names (e.g., `MyClass`, `UserProfile`).
+3. **UPPERCASE**: Used for constants (e.g., `MAX_VALUE`, `API_KEY`).
+
+{: .note }
+Follow good practices for naming - be descriptive and consistent. Write meaningful names that convey the purpose of the variable or method like `calculateTotal` not `ct`.
 
 ### Primitive vs Reference Types Quick Guide
 
-| JavaScript | Java Primitive            | Java Reference      |
-| ---------- | ------------------------- | ------------------- |
-| `number`   | `int`, `double`, `float`  | `Integer`, `Double` |
-| `string`   | `char` (single character) | `String`            |
-| `boolean`  | `boolean`                 | `Boolean`           |
+| JavaScript | Java Primitive           | Java Reference      |
+| ---------- | ------------------------ | ------------------- |
+| `number`   | `int`, `double`, `float` | `Integer`, `Double` |
+| `boolean`  | `boolean`                | `Boolean`           |
+
+| `string` | `char`, `String` | `String` |
+
+### Primitive Data Types in Java
+
+| Data Type | Description                                                                       |
+| --------- | --------------------------------------------------------------------------------- |
+| byte      | Stores whole numbers from -128 to 127                                             |
+| short     | Stores whole numbers from -32,768 to 32,767                                       |
+| int       | Stores whole numbers from -2,147,483,648 to 2,147,483,647                         |
+| long      | Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 |
+| float     | Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits           |
+| double    | Stores fractional numbers. Sufficient for storing 15 to 16 decimal digits         |
+| boolean   | Stores true or false values                                                       |
+| char      | Stores a single character/letter or ASCII values                                  |
+
+### String Type
+
+A String in Java is a non-primitive data type, because it refers to an object. The String type is so much used and integrated in Java, that some call it "the special ninth type".
 
 {: .warning }
-**Gotcha Alert:** `String` in Java is a reference type, not a primitive. This means `==` compares references, not values. Use `.equals()` for value comparison!
+**Gotcha Alert:** `String` in Java is a reference type, not a primitive. When you change the value of a String, you are actually creating a new String object with a reference to it. This means `==` compares references, not values. Use `.equals()` for value comparison!
 
 ```java
 String a = "hello";
@@ -109,8 +157,8 @@ public class HelloWorld {
 ```
 
 {: .note }
-Every line of code that runs in Java must be inside a class. And the class name should always start with an uppercase first letter. In our example, we named the class Main. Like JavaScript it is case-sensitive.
-System is a built-in Java class that contains useful members, such as out, similar to the console object in JavaScript.
+Every line of code that runs in Java must be inside a class. And the class name should always start with an uppercase first letter. In our example, we named the class Main. Like JavaScript it is case-sensitive. Unlike Javascript the semicolon is mandatory at the end of each statement.
+System is a built-in Java class that contains useful members, such as out, similar to the console object in JavaScript. There is also a print() method, which is similar to println(). The only difference is that it does not insert a new line at the end of the output:
 
 ## Object-Oriented Programming: Structure and Encapsulation
 
