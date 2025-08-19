@@ -31,14 +31,12 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.1" # Or the version you use locally
-          bundler-cache: true # Automatically runs bundle install and caches gems
+          ruby-version: "3.3"
+          bundler-cache: true
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
-        # Use the JEKYLL_ENV environment variable to build the site in production mode.
-        # The baseurl is automatically set by the configure-pages action.
         run: bundle exec jekyll build --destination ./_site
         env:
           JEKYLL_ENV: production
