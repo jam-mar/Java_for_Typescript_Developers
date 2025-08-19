@@ -102,7 +102,7 @@ public class HelloWorld {
 
 To compile and run this program locally
 
-1. Go to the code_examples [Java folder](https://github.com/jam-mar/Java_for_TypeScript_Developers/tree/main/code_examples/01-java-foundations/01-the-language).
+1. Go to the code_examples folder.
 2. You will see the `Main.java` file.
 3. Compile the program using the command: `javac Main.java`. A `Main.class` file will be generated.
 4. Run the program using the command: `java Main`
