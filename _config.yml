@@ -2,19 +2,9 @@
 title: "Java for TypeScript Developers: Migration Guide"
 url: "https://jam-mar.github.io"
 baseurl: "/Java_for_TypeScript_Developers"
-
-# Course metadata
-course:
-  title: "Java for TypeScript Developers"
-  subtitle: "A Migration Guide"
-  version: "1.0"
-  author: "James Marriott"
-  difficulty_levels:
-    - "beginner"
-    - "intermediate"
-    - "advanced"
-  keywords: ["Java", "TypeScript", "Migration", "Web Development"]
-  repository: "https://github.com/jam-mar/java_for_typescript_developers"
+description: >-
+  A comprehensive guide for TypeScript and Node.js developers 
+  transitioning to Java, Spring, Hibernate, and the enterprise ecosystem.
 
 # Build settings
 markdown: kramdown
@@ -22,26 +12,34 @@ highlighter: rouge
 theme: just-the-docs
 permalink: pretty
 
-# Collections for modules
-collections:
-  modules:
-    output: true
-    permalink: /:collection/:path
-
-# Default layouts for different content types
-defaults:
-  - scope:
-      path: ""
-      type: "modules"
-    values:
-      layout: "lesson"
-
 # Plugins
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-toc
+
+# --- THIS BLOCK IS REQUIRED FOR JEKYLL'S CORE ---
+# It tells Jekyll to process the _modules folder.
+collections:
+  modules:
+    output: true
+# -----------------------------------------------
+
+# Theme settings for Just the Docs
+# This tells the theme to build navigation for the 'modules' collection.
+just_the_docs:
+  collections:
+    modules:
+      name: Course Modules
+
+# Default layouts for different content types
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
 
 # Exclude files from processing
 exclude:
@@ -53,31 +51,3 @@ exclude:
   - node_modules/
   - vendor/
   - unused/
-
-# Include files
-include:
-  - _pages
-
-# Markdown settings
-kramdown:
-  input: GFM
-  hard_wrap: false
-  syntax_highlighter: rouge
-
-# In _config.yml
-sass:
-  sass_dir: assets/css
-
-# In _config.yml
-description: >- # This will be the site's meta description
-  A comprehensive guide for TypeScript and Node.js developers 
-  transitioning to Java, Spring, Hibernate, and the enterprise ecosystem.
-
-# The following value is needed for the jekyll-seo-tag plugin to work properly on GitHub Pages
-logo: /assets/logo.png # Optional: Path to your site's logo
-
-# Theme settings for Just the Docs
-just_the_docs:
-  collections:
-    modules:
-      name: Course Modules # This will be the top-level title in the sidebar
