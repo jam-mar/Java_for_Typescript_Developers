@@ -1,6 +1,7 @@
 ---
-layout: lesson
+layout: default
 title: "Module 5: Advanced Topics & Production Readiness"
+nav_order: 5
 ---
 
 ## Module 5: Advanced Topics & Production Readiness
@@ -9,7 +10,7 @@ With the fundamentals of building a database-driven web API covered, this final 
 
 ### Lessons in this Module
 
-- **[Lesson 5.1: Testing]({% link _modules/05-advanced-topics/01-placeholder.md %})** - An introduction to unit and integration testing in the Java ecosystem with JUnit, Mockito, and Testcontainers.
-- **[Lesson 5.2: Security]({% link _modules/05-advanced-topics/02-placeholder.md %})** - Securing your API with Spring Security, including common patterns like JWT authentication.
-- **[Lesson 5.3: Containerization]({% link _modules/05-advanced-topics/03-placeholder.md %})** - Creating a Dockerfile for your Spring Boot application to prepare it for deployment.
-- **[Lesson 5.4: A Look at Micronaut]({% link _modules/05-advanced-topics/04-placeholder.md %})** - A brief introduction to Micronaut as a modern, compile-time alternative to Spring, highlighting its fast startup and low memory footprint.
+- **[Lesson 5.1: Testing]({% link _modules/05-advanced-topics/01-testing.md %})** - An introduction to unit and integration testing in the Java ecosystem with JUnit, Mockito, and Testcontainers.
+- **[Lesson 5.2: Security]({% link _modules/05-advanced-topics/02-security.md %})** - Securing your API with Spring Security, including common patterns like JWT authentication.
+- **[Lesson 5.3: Containerization]({% link _modules/05-advanced-topics/03-containerization.md %})** - Creating a Dockerfile for your Spring Boot application to prepare it for deployment.
+- **[Lesson 5.4: A Look at Micronaut]({% link _modules/05-advanced-topics/04-intro-to-micronaut.md %})** - A brief introduction to Micronaut as a modern, compile-time alternative to Spring, highlighting its fast startup and low memory footprint.

@@ -1,6 +1,7 @@
 ---
-layout: lesson
+layout: default
 title: "Module 3: Persistence with Hibernate & Spring Data JPA"
+nav_order: 3
 ---
 
 ## Module 3: Persistence with Hibernate & Spring Data JPA
@@ -9,7 +10,7 @@ A backend application is incomplete without a database. This module introduces t
 
 ### Lessons in this Module
 
-- **[Lesson 3.1: Intro to ORM & JPA]({% link _modules/03-persistence-with-hibernate/01-placeholder.md %})** - What is an ORM and why is it used? An introduction to the Java Persistence API (JPA) specification.
-- **[Lesson 3.2: Entities]({% link _modules/03-persistence-with-hibernate/02-placeholder.md %})** - Defining your database models as Java classes using the `@Entity` annotation.
-- **[Lesson 3.3: Repositories with Spring Data JPA]({% link _modules/03-persistence-with-hibernate/03-placeholder.md %})** - The magic of creating complex database queries simply by defining interface methods.
-- **[Lesson 3.4: Relationships]({% link _modules/03-persistence-with-hibernate/04-placeholder.md %})** - Modeling database relationships like `@OneToMany` and `@ManyToOne` between your entities.
+- **[Lesson 3.1: Intro to ORM & JPA]({% link _modules/03-persistence-with-hibernate/01-intro-to-orm-jpa.md %})** - What is an ORM and why is it used? An introduction to the Java Persistence API (JPA) specification.
+- **[Lesson 3.2: Entities]({% link _modules/03-persistence-with-hibernate/02-entities.md %})** - Defining your database models as Java classes using the `@Entity` annotation.
+- **[Lesson 3.3: Repositories with Spring Data JPA]({% link _modules/03-persistence-with-hibernate/03-spring-data-jpa.md %})** - The magic of creating complex database queries simply by defining interface methods.
+- **[Lesson 3.4: Relationships]({% link _modules/03-persistence-with-hibernate/04-relationships.md %})** - Modeling database relationships like `@OneToMany` and `@ManyToOne` between your entities.

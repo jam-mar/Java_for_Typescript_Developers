@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Lesson 2
-parent: "Module 1: Java Foundations"
+title: 2.2 REST Controllers
+parent: "Module 2: Building Web APIs"
 nav_order: 2
 ---
 

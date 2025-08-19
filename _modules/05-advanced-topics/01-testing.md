@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Lesson 1
-parent: "Module 1: Java Foundations"
+title: 5.1 Testing
+parent: "Module 5: Advanced Topics & Production Readiness"
 nav_order: 1
 ---
 

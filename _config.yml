@@ -69,13 +69,6 @@ kramdown:
   hard_wrap: false
   syntax_highlighter: rouge
 
-# Navigation
-navigation:
-  - title: "Home"
-    url: "/"
-  - title: "Getting Started"
-    url: "/modules/00-introduction/"
-
 # In _config.yml
 sass:
   sass_dir: assets/css
@@ -87,3 +80,9 @@ description: >- # This will be the site's meta description
 
 # The following value is needed for the jekyll-seo-tag plugin to work properly on GitHub Pages
 logo: /assets/logo.png # Optional: Path to your site's logo
+
+# Theme settings for Just the Docs
+just_the_docs:
+  collections:
+    modules:
+      name: Course Modules # This will be the top-level title in the sidebar

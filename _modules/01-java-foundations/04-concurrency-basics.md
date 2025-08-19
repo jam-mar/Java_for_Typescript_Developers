@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Lesson 1
+title: 1.4 Concurrency Basics
 parent: "Module 1: Java Foundations"
-nav_order: 1
+nav_order: 4
 ---
 
 Content for this lesson is coming soon.
