@@ -10,14 +10,15 @@ Welcome to the foundational module of the course. The goal here is to rewire you
 
 ### Lessons in this Module
 
-- **[Lesson 1.1: Java Basics - Types, Variables & Syntax]({% link _modules/01-java-foundations/01-basics.md %})** - Master Java's type system, variables, and fundamental syntax differences from JavaScript
-- **[Lesson 1.2: Control Flow & Arrays]({% link _modules/01-java-foundations/02-control-flow-arrays.md %})** - Conditional statements, loops, and Java's fixed-size array system
-- **[Lesson 1.3: Methods, Scope & Recursion]({% link _modules/01-java-foundations/03-methods-scope.md %})** - Static vs instance methods, method overloading, variable scope, and recursive programming
-- **[Lesson 1.4: Object-Oriented Programming Fundamentals]({% link _modules/01-java-foundations/04-oop-fundamentals.md %})** - Classes, objects, inheritance, polymorphism, and the four pillars of OOP
-- **[Lesson 1.5: Java Ecosystem & Environment]({% link _modules/01-java-foundations/05-java-ecosystem.md %})** - JVM architecture, build tools (Maven/Gradle), IDEs, and deployment strategies
-- **[Lesson 1.6: Data Structures & Collections]({% link _modules/01-java-foundations/06-data-structures.md %})** - Master Java's Collections Framework: Lists, Sets, Maps, Queues, and their performance characteristics
-- **[Lesson 1.7: File Handling & I/O]({% link _modules/01-java-foundations/07-file-handling.md %})** - Modern file operations, streams, serialization, and advanced I/O techniques
-- **[Lesson 1.8: Advanced Java Features]({% link _modules/01-java-foundations/08-advanced-features.md %})** - Wrapper classes, generics, annotations, lambdas, Optional, and modern Java (records, sealed classes)
+- **[Lesson 1.1: Java Basics - Types, Variables & Syntax]({% link _modules/1-java-foundations/1.1-basics.md %})** - Master Java's type system, variables, and fundamental syntax differences from JavaScript
+- **[Lesson 1.2: Control Flow & Arrays]({% link _modules/1-java-foundations/1.2-control-flow-arrays.md %})** - Conditional statements, loops, and Java's fixed-size array system
+- **[Lesson 1.3: Methods, Scope & Recursion]({% link _modules/1-java-foundations/1.3-methods-scope.md %})** - Static vs instance methods, method overloading, variable scope, and recursive programming
+- **[Lesson 1.4: Object-Oriented Programming Fundamentals]({% link _modules/1-java-foundations/1.4-oop-fundamentals.md %})** - Classes, objects, inheritance, polymorphism, and the four pillars of OOP
+- **[Lesson 1.5: Java Ecosystem & Environment]({% link _modules/1-java-foundations/1.5-java-ecosystem.md %})** - JVM architecture, build tools (Maven/Gradle), IDEs, and deployment strategies
+- **[Lesson 1.6: Data Structures & Collections]({% link _modules/1-java-foundations/1.6-data-structures.md %})** - Master Java's Collections Framework: Lists, Sets, Maps, Queues, and their performance characteristics
+- **[Lesson 1.7: File Handling & I/O]({% link _modules/1-java-foundations/1.7-file-handling.md %})** - Modern file operations, streams, serialization, and advanced I/O techniques
+- **[Lesson 1.8: Advanced Java Features]({% link _modules/1-java-foundations/1.8-advanced-features.md %})** - Wrapper classes, generics, annotations, lambdas, Optional, and modern Java (records, sealed classes)
+- **[Lesson 1.9: Conclusion & Next Steps]({% link _modules/1-java-foundations/1.9-conclusion.md %})** - Wrapping up the module and preparing for the next steps in your Java journey.
 
 ### Learning Objectives
 
