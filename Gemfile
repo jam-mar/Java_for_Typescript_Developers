@@ -2,8 +2,10 @@
 source "https://rubygems.org"
 
 # Core gems
-gem "jekyll", "~> 4.3.0"
-gem "just-the-docs"
+gem "jekyll", "~> 4.4.1" # installed by `gem jekyll`
+
+gem "just-the-docs", "0.10.1" # pinned to the current release
+
 
 # Required for Ruby 3.4+ compatibility
 gem "csv"
