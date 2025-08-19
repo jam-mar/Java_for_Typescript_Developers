@@ -21,9 +21,9 @@ highlighter: rouge
 theme: minima
 permalink: pretty
 
-# Collections for chapters
+# Collections for modules
 collections:
-  chapters:
+  modules:
     output: true
     permalink: /:collection/:path
 
@@ -36,11 +36,7 @@ defaults:
       layout: "post"
   - scope:
       path: ""
-      type: "chapters"
-    values:
-      layout: "lesson"
-  - scope:
-      path: "chapters"
+      type: "modules"
     values:
       layout: "lesson"
 
@@ -77,4 +73,4 @@ navigation:
   - title: "Home"
     url: "/"
   - title: "Getting Started"
-    url: "/chapters/00-introduction/"
+    url: "/modules/00-introduction/"
