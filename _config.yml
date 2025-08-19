@@ -32,6 +32,7 @@ just_the_docs:
   collections:
     modules:
       name: Course Modules
+color_scheme: engage
 
 # Default layouts for different content types
 defaults:

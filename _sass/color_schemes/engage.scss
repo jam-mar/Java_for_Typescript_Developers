@@ -1,0 +1,125 @@
+// _sass/color_schemes/engage.scss
+
+// Use the modern Sass module system to avoid deprecation warnings.
+@use "sass:color";
+@use "sass:map";
+
+// -----------------------------------------------------------------------------
+// Engage Theme - A professional theme for Java educational content.
+// -----------------------------------------------------------------------------
+
+//
+//-- Variable Overrides for 'just-the-docs' --
+//
+// These variables override the defaults provided by the theme using the
+// built-in color system for better consistency.
+//
+
+//-- General Colors --
+$body-background-color: $grey-lt-000;
+$body-text-color: $grey-dk-250;
+$body-heading-color: $blue-300;
+
+//-- Link Colors --
+$link-color: $blue-100;
+$link-hover-color: $green-100; // Use green for a distinct hover effect.
+
+//-- Sidebar Styles --
+$sidebar-color: $grey-lt-100;
+$nav-child-link-color: $grey-dk-100;
+$nav-child-link-hover-color: $blue-100;
+
+//-- Button Styles --
+$btn-primary-color: $white;
+$btn-primary-background-color: $blue-100;
+$btn-primary-hover-background-color: color.adjust(
+  $btn-primary-background-color,
+  $lightness: -8%
+);
+
+//-- Code Block Styles --
+$code-background-color: $white;
+$code-block-border-color: $grey-lt-200;
+$code-text-color: $grey-dk-250;
+
+//-- Search Styles --
+$search-result-preview-color: $grey-dk-000;
+$search-result-highlight-color: $yellow-200;
+$search-result-highlight-text-color: $grey-dk-300;
+
+//-- Table Styles --
+$table-border-color: $grey-lt-300;
+$table-header-color: $blue-300;
+$table-header-background-color: $grey-lt-100;
+
+//
+//-- Custom Callout Styles --
+//
+// Defines more prominent styles for different types of callouts.
+//
+
+// A map to hold the callout configurations for cleaner, generated CSS.
+$callouts: (
+  "note": (
+    "base": $blue-000,
+    "border": $blue-100,
+    "title": $blue-200,
+    "lightness": 88%,
+  ),
+  "warning": (
+    "base": $red-000,
+    "border": $red-200,
+    "title": $red-300,
+    "lightness": 88%,
+  ),
+  "important": (
+    "base": $yellow-100,
+    "border": $yellow-300,
+    "title": $yellow-300,
+    "lightness": 82%,
+  ),
+  "tip": (
+    "base": $green-000,
+    "border": $green-200,
+    "title": $green-200,
+    "lightness": 88%,
+  ),
+  "highlight": (
+    "base": $purple-000,
+    "border": $purple-100,
+    "title": $purple-200,
+    "lightness": 90%,
+  ),
+);
+
+// Loop through the map to generate the styles for each callout type.
+@each $name, $colors in $callouts {
+  .#{$name},
+  .#{$name}-title {
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border-left: 3px solid map.get($colors, "border");
+    border-radius: $border-radius;
+    background-color: color.scale(
+      map.get($colors, "base"),
+      $lightness: map.get($colors, "lightness")
+    );
+
+    > p:last-child,
+    > ul:last-child,
+    > ol:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .#{$name}-title {
+    // Style the first paragraph inside a titled callout.
+    > p:first-of-type,
+    > blockquote > p:first-of-type {
+      font-weight: bold;
+      color: map.get($colors, "title");
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+    }
+  }
+}
