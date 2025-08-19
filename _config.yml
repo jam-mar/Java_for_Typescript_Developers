@@ -1,6 +1,7 @@
 # Site settings
 title: "Java for TypeScript Developers: Migration Guide"
-url: "https://jam-mar.github.io/Java_for_TypeScript_Developers"
+url: "https://jam-mar.github.io"
+baseurl: "/Java_for_TypeScript_Developers"
 
 # Course metadata
 course:
@@ -18,7 +19,7 @@ course:
 # Build settings
 markdown: kramdown
 highlighter: rouge
-theme: minima
+theme: just-the-docs
 permalink: pretty
 
 # Collections for modules
@@ -74,3 +75,15 @@ navigation:
     url: "/"
   - title: "Getting Started"
     url: "/modules/00-introduction/"
+
+# In _config.yml
+sass:
+  sass_dir: assets/css
+
+# In _config.yml
+description: >- # This will be the site's meta description
+  A comprehensive guide for TypeScript and Node.js developers 
+  transitioning to Java, Spring, Hibernate, and the enterprise ecosystem.
+
+# The following value is needed for the jekyll-seo-tag plugin to work properly on GitHub Pages
+logo: /assets/logo.png # Optional: Path to your site's logo

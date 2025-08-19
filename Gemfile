@@ -3,7 +3,7 @@ source "https://rubygems.org"
 
 # Core gems
 gem "jekyll", "~> 4.3.0"
-gem "minima", "~> 2.5"
+gem "just-the-docs"
 
 # Required for Ruby 3.4+ compatibility
 gem "csv"
@@ -17,7 +17,6 @@ group :jekyll_plugins do
   gem "jekyll-sitemap"
   gem "jekyll-seo-tag"
   gem "jekyll-toc"
-  gem "jekyll-paginate"
 end
 
 # Windows and JRuby compatibility
