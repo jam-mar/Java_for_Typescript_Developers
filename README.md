@@ -6,7 +6,7 @@ This comprehensive course is designed to help JavaScript, TypeScript, and Node.j
 
 The course is deployed and available to view on GitHub Pages:
 
-<https://jam-mar.github.io/Java_for_TypeScript_Developers/>
+[Java for TypeScript Developers: Migration Guide](https://jam-mar.github.io/Java_for_Typescript_Developers/)
 
 ## Course Structure
 
