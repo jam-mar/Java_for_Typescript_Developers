@@ -92,6 +92,14 @@ System.out.println(a.equals(c));  // true (same value)
 
 Go to [w3schools](https://www.w3schools.com/java/tryjava.asp?filename=demo_helloworld)
 
+To compile and run this program locally
+
+1. Go to the code_examples folder.
+2. You will see the `Main.java` file.
+3. Compile the program using the command: `javac Main.java`. A `Main.class` file will be generated.
+4. Run the program using the command: `java Main`
+5. You should see the output: `Hello World`
+
 ```java
 public class HelloWorld {
     public static void main(String[] args) {
@@ -100,13 +108,9 @@ public class HelloWorld {
 }
 ```
 
-To compile and run this program locally
-
-1. Go to the code_examples folder.
-2. You will see the `Main.java` file.
-3. Compile the program using the command: `javac Main.java`. A `Main.class` file will be generated.
-4. Run the program using the command: `java Main`
-5. You should see the output: `Hello World`
+{: .note }
+Every line of code that runs in Java must be inside a class. And the class name should always start with an uppercase first letter. In our example, we named the class Main. Like JavaScript it is case-sensitive.
+System is a built-in Java class that contains useful members, such as out, similar to the console object in JavaScript.
 
 ## Object-Oriented Programming: Structure and Encapsulation
 
@@ -425,7 +429,7 @@ public class BankAccount {
 }
 ```
 
-<details>
+<details markdown="1">
 <summary>💡 Click to see solution</summary>
 
 ```java
