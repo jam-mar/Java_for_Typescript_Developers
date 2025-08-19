@@ -1,8 +1,0 @@
----
-layout: default
-title: Lesson 1
-parent: "Module 1: Java Foundations"
-nav_order: 1
----
-
-Content for this lesson is coming soon.
