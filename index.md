@@ -24,49 +24,49 @@ This course is designed to help web developers transition smoothly from JavaScri
 
 ### **Part I: Java Language Fundamentals**
 
-#### **[Module 1: Introduction & Setup]({% link _modules/1-introduction/index.md %})**
+#### **[Module 1: Introduction & Setup]({% link _modules/01-introduction/index.md %})**
 
 - Java ecosystem overview
 - Development environment setup
 - Your first Java program
 - Comparing Java to JavaScript/TypeScript
 
-#### **[Module 2: Java Basics]({% link _modules/2-java-basics/index.md %})**
+#### **[Module 2: Java Basics]({% link _modules/02-java-basics/index.md %})**
 
 - Syntax fundamentals
 - Variables and data types
 - Control structures and operators
 - Methods and basic program structure
 
-#### **[Module 3: Primitive Data Types, Variables & Arrays]({% link _modules/3-primitive-data-types/index.md %})**
+#### **[Module 3: Primitive Data Types, Variables & Arrays]({% link _modules/03-primitive-data-types/index.md %})**
 
 - Understanding Java's type system
 - Primitive vs reference types
 - Array manipulation and multi-dimensional arrays
 - Memory management basics
 
-#### **[Module 4: Eclipse Tips and Tricks]({% link _modules/4-eclipse-tips/index.md %})**
+#### **[Module 4: Eclipse Tips and Tricks]({% link _modules/04-eclipse-tips/index.md %})**
 
 - IDE mastery for productivity
 - Debugging techniques
 - Code generation and refactoring tools
 - Keyboard shortcuts and workflow optimization
 
-#### **[Module 5: Operators and Operands]({% link _modules/5-operators/index.md %})**
+#### **[Module 5: Operators and Operands]({% link _modules/05-operators/index.md %})**
 
 - Arithmetic and logical operations
 - Comparison and assignment operators
 - Operator precedence and evaluation
 - Bitwise operations
 
-#### **[Module 6: Strings in Java]({% link _modules/6-strings/index.md %})**
+#### **[Module 6: Strings in Java]({% link _modules/06-strings/index.md %})**
 
 - String manipulation and methods
 - StringBuilder vs String performance
 - Regular expressions in Java
 - Text processing patterns
 
-#### **[Module 7: Control Statements]({% link _modules/7-control-statements/index.md %})**
+#### **[Module 7: Control Statements]({% link _modules/07-control-statements/index.md %})**
 
 - Conditional logic (if, switch)
 - Loops (for, while, do-while)
@@ -75,14 +75,14 @@ This course is designed to help web developers transition smoothly from JavaScri
 
 ### **Part II: Object-Oriented Programming**
 
-#### **[Module 8: Miscellaneous Java Concepts]({% link _modules/8-miscellaneous/index.md %})**
+#### **[Module 8: Miscellaneous Java Concepts]({% link _modules/08-miscellaneous/index.md %})**
 
 - Packages and imports
 - Access modifiers
 - Static vs instance members
 - Constants and final keyword
 
-#### **[Module 9: Iteration Statements in Java]({% link _modules/9-iteration/index.md %})**
+#### **[Module 9: Iteration Statements in Java]({% link _modules/09-iteration/index.md %})**
 
 - Advanced looping techniques
 - Iterator pattern
@@ -325,7 +325,7 @@ Track your progress through each module and take assessments to validate your le
 
 **🚀 Ready to Start?**
 
-Begin your journey from Node.js/TypeScript to Java enterprise development with [Module 1: Introduction & Setup]({% link _modules/1-introduction/index.md %})!
+Begin your journey from Node.js/TypeScript to Java enterprise development with [Module 1: Introduction & Setup]({% link _modules/01-introduction/index.md %})!
 
 ---
 
