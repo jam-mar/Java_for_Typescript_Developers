@@ -12,13 +12,47 @@ Let's write your first Java program and compare it directly to JavaScript and Ty
 {: .highlight }
 **Goal**: Write a simple "Hello World" program in Java and understand how it compares to JavaScript/TypeScript.
 
+### Understanding the Structure
+
+```java
+public class JavaBasicsDemo {  // Class name must match filename!
+
+    // The main method - entry point of your program
+    // public: accessible from anywhere
+    // static: belongs to the class, not instances
+    // void: doesn't return a value
+    // String[] args: command-line arguments
+    public static void main(String[] args) {
+        // All executable code goes here
+    }
+}
+```
+
 ---
 
 ## Hello World in Java
 
+```java
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+```
+
 ### Step 1: Create the Project
 
-In Eclipse:
+You can run this in console
+
+### Compiling and Running
+
+1. **Save** as `HelloWorld.java` (filename must match class name exactly!)
+2. **Compile:** `javac HelloWorld.java` (creates `HelloWorld.class`)
+3. **Run:** `java HelloWorld` (no `.class` extension needed)
+
+however it is recommended to use an IDE for larger projects.
+
+Let's use the Eclipse IDE that we installed earlier.
 
 1. **File** → **New** → **Java Project**
 2. **Name**: `HelloWorld`

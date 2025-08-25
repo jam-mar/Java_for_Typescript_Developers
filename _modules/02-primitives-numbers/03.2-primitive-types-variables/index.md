@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 03.2 primitive vs reference
+title: 03.2 Primitive Types and Variables
 parent: "Module 03: Primitive Data Types, Variables & Arrays"
 nav_order: 2
 ---

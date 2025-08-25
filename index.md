@@ -24,26 +24,25 @@ This course is designed to help web developers transition smoothly from JavaScri
 
 ### **Part I: Java Language Fundamentals**
 
-#### **[Module 1: Introduction & Setup]({% link _modules/01-introduction/index.md %})**
+#### **[Module 1: Introduction & Setup]({% link _modules/01-basics/index.md %})**
 
 - Java ecosystem overview
 - Development environment setup
 - Your first Java program
 - Comparing Java to JavaScript/TypeScript
 
-#### **[Module 2: Java Basics]({% link _modules/02-java-basics/index.md %})**
+#### **[Module 2: Java Primitives and Variables]({% link _modules/02-primitives-and-variables/index.md %})**
 
-- Syntax fundamentals
+- Type system overview
+- Primitive data types
+- Number types
 - Variables and data types
-- Control structures and operators
-- Methods and basic program structure
 
-#### **[Module 3: Primitive Data Types, Variables & Arrays]({% link _modules/03-primitive-data-types/index.md %})**
+#### **[Module 3: Arrays and Array Methods]({% link _modules/03-arrays/index.md %})**
 
-- Understanding Java's type system
-- Primitive vs reference types
-- Array manipulation and multi-dimensional arrays
-- Memory management basics
+- Array basics and declaration
+- Multidimensional arrays
+- Array manipulation methods
 
 #### **[Module 4: Eclipse Tips and Tricks]({% link _modules/04-eclipse-tips/index.md %})**
 
