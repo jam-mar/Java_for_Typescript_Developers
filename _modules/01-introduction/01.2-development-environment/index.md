@@ -5,6 +5,8 @@ parent: "Module 01: Introduction & Setup"
 nav_order: 2
 ---
 
+# Setting Up Your Java Development Environment
+
 There are many different ways to set up a Java development environment and a variety of tools available to help you write, test, and debug your code.
 
 Let's get you coding in Java quickly with two free, reliable tools that will serve you throughout this course.
@@ -200,3 +202,9 @@ In **1.3 First Java Program**, we'll explore Java syntax and write a more substa
 > 4. **Everything you need**: No additional tools required to start learning
 
 Ready to dive deeper into Java? Let's go! 🚀
+
+<div class="navigation-buttons">
+  <a href="{% link _modules/01-introduction/01.1-java-ecosystem-overview/index.md %}" class="btn btn-outline btn-nav btn-nav-prev">← Previous: 1.1 Java Ecosystem Overview</a>
+  <a href="{% link _modules/01-introduction/01.3-first-java-program/index.md %}" class="btn btn-primary btn-nav btn-nav-next">Next: 1.3 First Java Program →</a>
+</div>
+{: .fs-2 }

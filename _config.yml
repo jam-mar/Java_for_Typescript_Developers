@@ -34,9 +34,6 @@ just_the_docs:
       nav_exclude: false
       search_exclude: false
 
-# Theme color scheme
-color_scheme: engage
-
 # Navigation settings
 nav_external_links:
   - title: "GitHub Repository"

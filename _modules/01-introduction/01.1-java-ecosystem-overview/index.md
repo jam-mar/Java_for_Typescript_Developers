@@ -5,7 +5,7 @@ parent: "Module 01: Introduction & Setup"
 nav_order: 1
 ---
 
-## Welcome to Java for TypeScript Developers! 🚀
+# Welcome to Java for TypeScript Developers! 🚀
 
 Coming from the fast-moving JavaScript/TypeScript world, Java might seem like a different planet. But here's the thing - the skills you've built as a web developer translate beautifully to Java, and the stability and power you'll gain will transform how you think about backend development.
 
@@ -267,3 +267,9 @@ In **1.2 Development Environment**, we'll set up your complete Java development 
 - Creating your first project
 
 ---
+
+<div class="navigation-buttons">
+  <div></div>
+  <a href="{% link _modules/01-introduction/01.2-development-environment/index.md %}" class="btn btn-primary btn-nav btn-nav-next">Next: 1.2 Development Environment →</a>
+</div>
+{: .fs-2 }

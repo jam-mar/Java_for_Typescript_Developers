@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 02.1 syntax fundamentals
+title: 02.1 Java Syntax Fundamentals
 parent: "Module 02: Java Basics"
 nav_order: 1
 ---
