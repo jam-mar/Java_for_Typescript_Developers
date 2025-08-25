@@ -112,10 +112,6 @@ exclude:
   - CHANGELOG.md
   - screenshot.png
 
-# Include files that start with underscore
-include:
-  - "_modules"
-
 # Code highlighting and formatting
 kramdown:
   syntax_highlighter_opts:

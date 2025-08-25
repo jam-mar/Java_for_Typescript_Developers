@@ -1,8 +1,6 @@
 ---
-layout: default
-title: "Module 08: Miscellaneous Java Concepts"
+title: "Module 8: Miscellaneous"
+layout: "default"
+nav_order: 8
 has_children: true
-nav_order: 08
 ---
-
-Content for this lesson is coming soon.

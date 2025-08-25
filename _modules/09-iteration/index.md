@@ -1,8 +1,6 @@
 ---
-layout: default
-title: "Module 09: Iteration Statements in Java"
+title: "Module 09: Iteration"
+layout: "default"
+nav_order: 9
 has_children: true
-nav_order: 09
 ---
-
-Content for this lesson is coming soon.
