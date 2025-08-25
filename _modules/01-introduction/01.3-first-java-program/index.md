@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 01.3 first java program
+title: 01.3 First Java Program
 parent: "Module 01: Introduction & Setup"
 nav_order: 3
 ---
