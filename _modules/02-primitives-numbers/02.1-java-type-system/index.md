@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 03.1 Java Type System
-parent: "Module 03: Primitive Data Types, Variables & Arrays"
+title: 02.1 Java Type System
+parent: "Module 02: Primitives & Numbers"
 nav_order: 1
 ---
 
@@ -85,3 +85,9 @@ Java has strict naming conventions that you should always follow:
 - **SCREAMING_SNAKE_CASE:** Constants → `MAX_VALUE`, `API_KEY`
 
 ---
+
+<div class="navigation-buttons">
+    <div></div>
+    <a href="{% link _modules/02-primitives-numbers/02.2-primitive-types-variables/index.md %}" class="btn btn-primary btn-nav btn-nav-next">Next: 2.2 Primitive Types →</a>
+</div>
+{: .fs-2 }

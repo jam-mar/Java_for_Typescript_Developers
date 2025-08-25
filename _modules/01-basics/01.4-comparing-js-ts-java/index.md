@@ -79,19 +79,6 @@ JavaScript makes you a web developer.
 
 ---
 
-## What's Next?
-
-In **Module 2: Java Basics**, we'll build on what you've learned:
-
-- Master Java's type system
-- Learn object-oriented programming
-- Understand Java's approach to organizing code
-- Write more substantial programs
-
-Ready to level up your career? Let's dive deeper into Java! 🚀
-
----
-
 {: .fs-2 }
-[← Previous: 1.3 First Java Program]({% link _modules/01-introduction/01.3-first-java-program/index.md %}){: .btn .btn-outline }
-[Next: Module 2: Java Basics →]({% link _modules/02-java-basics/index.md %}){: .btn .btn-primary }
+[← Previous: 1.3 First Java Program]({% link _modules/01-basics/01.3-first-java-program/index.md %}){: .btn .btn-outline }
+[Next: Module 2: Java Basics →]({% link _modules/02-primitives-numbers/index.md %}){: .btn .btn-primary }

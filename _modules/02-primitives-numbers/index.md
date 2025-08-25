@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "Module 03: Primitive Data Types, Variables & Arrays"
+title: "Module 02: Primitives & Numbers"
 has_children: true
-nav_order: 03
+nav_order: 02
 ---
 
 Content for this lesson is coming soon.

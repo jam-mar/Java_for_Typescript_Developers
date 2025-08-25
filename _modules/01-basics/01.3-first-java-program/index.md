@@ -428,5 +428,5 @@ You now know how to write and run basic Java programs! The syntax is similar to 
 ---
 
 {: .fs-2 }
-[← Previous: 1.2 Development Environment]({% link _modules/01-introduction/01.2-development-environment/index.md %}){: .btn .btn-outline }
-[Next: 1.4 Comparing Java to JavaScript/TypeScript →]({% link _modules/01-introduction/01.4-comparing-js-ts-java/index.md %}){: .btn .btn-primary }
+[← Previous: 1.2 Development Environment]({% link _modules/01-basics/01.2-development-environment/index.md %}){: .btn .btn-outline }
+[Next: 1.4 Comparing Java to JavaScript/TypeScript →]({% link _modules/01-basics/01.4-comparing-js-ts-java/index.md %}){: .btn .btn-primary }

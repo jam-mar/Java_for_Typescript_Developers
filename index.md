@@ -31,7 +31,7 @@ This course is designed to help web developers transition smoothly from JavaScri
 - Your first Java program
 - Comparing Java to JavaScript/TypeScript
 
-#### **[Module 2: Java Primitives and Variables]({% link _modules/02-primitives-and-variables/index.md %})**
+#### **[Module 2: Java Primitives and Variables]({% link _modules/02-primitives-numbers/index.md %})**
 
 - Type system overview
 - Primitive data types
@@ -61,9 +61,10 @@ This course is designed to help web developers transition smoothly from JavaScri
 #### **[Module 6: Strings in Java]({% link _modules/06-strings/index.md %})**
 
 - String manipulation and methods
-- StringBuilder vs String performance
-- Regular expressions in Java
-- Text processing patterns
+- String Comparison
+- Escape sequences
+- String Formatting
+- Regular Expressions
 
 #### **[Module 7: Control Statements]({% link _modules/07-control-statements/index.md %})**
 
@@ -324,7 +325,7 @@ Track your progress through each module and take assessments to validate your le
 
 **🚀 Ready to Start?**
 
-Begin your journey from Node.js/TypeScript to Java enterprise development with [Module 1: Introduction & Setup]({% link _modules/01-introduction/index.md %})!
+Begin your journey from Node.js/TypeScript to Java enterprise development with [Module 1: Introduction & Setup]({% link _modules/01-basics/index.md %})!
 
 ---
 

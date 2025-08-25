@@ -204,7 +204,7 @@ In **1.3 First Java Program**, we'll explore Java syntax and write a more substa
 Ready to dive deeper into Java? Let's go! 🚀
 
 <div class="navigation-buttons">
-  <a href="{% link _modules/01-introduction/01.1-java-ecosystem-overview/index.md %}" class="btn btn-outline btn-nav btn-nav-prev">← Previous: 1.1 Java Ecosystem Overview</a>
-  <a href="{% link _modules/01-introduction/01.3-first-java-program/index.md %}" class="btn btn-primary btn-nav btn-nav-next">Next: 1.3 First Java Program →</a>
+  <a href="{% link _modules/01-basics/01.1-java-ecosystem-overview/index.md %}" class="btn btn-outline btn-nav btn-nav-prev">← Previous: 1.1 Java Ecosystem Overview</a>
+  <a href="{% link _modules/01-basics/01.3-first-java-program/index.md %}" class="btn btn-primary btn-nav btn-nav-next">Next: 1.3 First Java Program →</a>
 </div>
 {: .fs-2 }

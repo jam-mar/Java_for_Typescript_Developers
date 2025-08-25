@@ -312,6 +312,6 @@ In **1.2 Development Environment**, we'll set up your complete Java development 
 
 <div class="navigation-buttons">
   <div></div>
-  <a href="{% link _modules/01-introduction/01.2-development-environment/index.md %}" class="btn btn-primary btn-nav btn-nav-next">Next: 1.2 Development Environment →</a>
+  <a href="{% link _modules/01-basics/01.2-development-environment/index.md %}" class="btn btn-primary btn-nav btn-nav-next">Next: 1.2 Development Environment →</a>
 </div>
 {: .fs-2 }
