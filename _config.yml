@@ -17,30 +17,83 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-toc
 
-# --- THIS BLOCK IS REQUIRED FOR JEKYLL'S CORE ---
-# It tells Jekyll to process the _modules folder.
+# --- COLLECTIONS CONFIGURATION ---
+# This tells Jekyll to process the modules folder as a collection
 collections:
   modules:
     output: true
-# -----------------------------------------------
+    permalink: /:collection/:name/
 
-# Theme settings for Just the Docs
-# This tells the theme to build navigation for the 'modules' collection.
+# --- NAVIGATION CONFIGURATION ---
+# Configure Just the Docs theme to use our modules for navigation
 just_the_docs:
   collections:
     modules:
       name: Course Modules
-color_scheme: engage
+      nav_exclude: false
+      search_exclude: false
 
-# Default layouts for different content types
+# Navigation settings
+nav_external_links:
+  - title: "GitHub Repository"
+    url: "https://github.com/jam-mar/Java_for_TypeScript_Developers"
+    hide_icon: false
+
+# Enable search
+search_enabled: true
+search:
+  heading_level: 2
+  previews: 3
+  preview_words_before: 5
+  preview_words_after: 10
+  tokenizer_separator: /[\s/]+/
+  rel_url: true
+  button: false
+
+# Enable heading anchors
+heading_anchors: true
+
+# Default front matter values
 defaults:
+  # Default for all module pages
+  - scope:
+      path: "modules"
+      type: "modules"
+    values:
+      layout: "default"
+      has_children: false
+      nav_exclude: false
+
+  # Default for main module index pages (those with has_children: true)
+  - scope:
+      path: "modules/**/index.html"
+      type: "modules"
+    values:
+      layout: "default"
+      has_children: true
+      nav_exclude: false
+
+  # Default for posts
   - scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
+
+  # Default for pages
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+# Footer content
+footer_content: 'Copyright &copy; 2024 Java for TypeScript Developers. Distributed under the <a href="https://github.com/jam-mar/Java_for_TypeScript_Developers/blob/main/LICENSE">MIT License</a>.'
+
+# Google Analytics (optional - add your tracking ID)
+# ga_tracking: UA-XXXXXXXX-X
+# ga_tracking_anonymize_ip: true
 
 # Exclude files from processing
 exclude:
@@ -52,3 +105,28 @@ exclude:
   - node_modules/
   - vendor/
   - unused/
+  - "*.gem"
+  - "*.gemspec"
+  - tools/
+  - README.md
+  - CHANGELOG.md
+  - screenshot.png
+
+# Include files that start with underscore
+include:
+  - "_modules"
+
+# Code highlighting and formatting
+kramdown:
+  syntax_highlighter_opts:
+    line_numbers: true
+    tab_width: 2
+
+# Compress HTML output
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: []
+  blanklines: false
+  profile: false
