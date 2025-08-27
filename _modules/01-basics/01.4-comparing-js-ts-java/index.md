@@ -81,4 +81,4 @@ JavaScript makes you a web developer.
 
 {: .fs-2 }
 [← Previous: 1.3 First Java Program]({% link _modules/01-basics/01.3-first-java-program/index.md %}){: .btn .btn-outline }
-[Next: Module 2: Java Basics →]({% link _modules/02-primitives-numbers/index.md %}){: .btn .btn-primary }
+[Next: Module 2: Primitives →]({% link _modules/02-primitives-numbers/index.md %}){: .btn .btn-primary }

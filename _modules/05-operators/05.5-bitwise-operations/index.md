@@ -1,8 +1,8 @@
 ---
 layout: default
-title: 05.4 Bitwise Operations
+title: 05.5 Bitwise Operations
 parent: "Module 05: Operators and Operands"
-nav_order: 4
+nav_order: 5
 ---
 
 # Bitwise Operations

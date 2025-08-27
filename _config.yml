@@ -18,22 +18,26 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
-# --- COLLECTIONS CONFIGURATION ---
-# This tells Jekyll to process the modules folder as a collection
-collections:
-  modules:
-    output: true
-    permalink: /:collection/:name/
-
-# --- NAVIGATION CONFIGURATION ---
-# Configure Just the Docs theme to use our modules for navigation
-just_the_docs:
-  collections:
-    modules:
-      name: Course Modules
+# --- CORRECT ---
+defaults:
+  # Default for all module pages
+  - scope:
+      path: "_modules" # <-- Add underscore here
+      type: "modules"
+    values:
+      layout: "default"
+      has_children: false
       nav_exclude: false
-      search_exclude: false
 
+  # Default for main module index pages (those with has_children: true)
+  - scope:
+      path: "_modules/**/index.html" # <-- And add underscore here
+      type: "modules"
+    values:
+      layout: "default"
+      has_children: true
+      nav_exclude: false
+      
 # Navigation settings
 nav_external_links:
   - title: "GitHub Repository"
@@ -111,6 +115,10 @@ exclude:
   - README.md
   - CHANGELOG.md
   - screenshot.png
+
+# Include files that start with underscore
+include:
+  - "_modules"
 
 # Code highlighting and formatting
 kramdown:

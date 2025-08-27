@@ -1,86 +1,107 @@
 ---
 layout: default
-title: 03.4 Array Methods
-parent: "Module 03: Primitive Data Types, Variables & Arrays"
-nav_order: 4
+title: 03.3 Array Methods
+parent: "Module 03: Arrays"
+nav_order: 3
 ---
 
-## Array Utilities and Common Operations
+# Array Methods and Utilities
 
-### Inspecting the value of arrays
+Java provides powerful utilities for working with arrays through the `java.util.Arrays` class and built-in array operations.
 
-Use the toString() array method from the Arrays class to log out the values of in an array
+## Displaying Array Contents
 
-```Java
+The most common need when working with arrays is to see their contents. Java arrays don't have a meaningful `toString()` method by default.
+
+```java
 public class ArraysDemo {
-    public static void main(String[]args) {
-	  int[] myArray = { 3,2,1 };
-	  // expected output: null
-	  System.out.println(java.util.Arrays.toString(myArray));
+    public static void main(String[] args) {
+        int[] myArray = {3, 2, 1};
+
+        // This won't work as expected
+        System.out.println(myArray); // Prints memory address
+
+        // Use Arrays.toString() instead
+        System.out.println(java.util.Arrays.toString(myArray)); // [3, 2, 1]
     }
 }
 ```
 
-```Java
-// Or import the Arrays class to access the Arrays class methods directly.
+For cleaner code, import the Arrays class:
+
+```java
 import java.util.Arrays;
 
 public class ArraysDemo {
-    public static void main(String[]args) {
-        int[] myArray = { 3,2,1 };
-        // expected output: [3, 2, 1]
-        System.out.println(Arrays.toString(myArray));
+    public static void main(String[] args) {
+        int[] myArray = {3, 2, 1};
+        System.out.println(Arrays.toString(myArray)); // [3, 2, 1]
     }
 }
 ```
 
-### Arrays Class Utilities
+## Essential Arrays Class Methods
+
+The `Arrays` class provides static methods for common array operations:
 
 ```java
 import java.util.Arrays;
 
-int[] numbers = {5, 2, 8, 1, 9};
+public class ArrayUtilities {
+    public static void main(String[] args) {
+        int[] numbers = {5, 2, 8, 1, 9};
 
-// Sorting
-Arrays.sort(numbers);  // Modifies original array
-System.out.println(Arrays.toString(numbers)); // [1, 2, 5, 8, 9]
+        // Sorting (modifies original array)
+        Arrays.sort(numbers);
+        System.out.println("Sorted: " + Arrays.toString(numbers)); // [1, 2, 5, 8, 9]
 
-// Searching (array must be sorted first)
-int index = Arrays.binarySearch(numbers, 5); // Returns index of 5
+        // Binary search (array must be sorted)
+        int index = Arrays.binarySearch(numbers, 5);
+        System.out.println("Index of 5: " + index); // 2
 
-// Copying arrays
-int[] copy = Arrays.copyOf(numbers, numbers.length);
-int[] partial = Arrays.copyOfRange(numbers, 1, 4); // Copy elements 1-3
+        // Copying arrays
+        int[] fullCopy = Arrays.copyOf(numbers, numbers.length);
+        int[] partialCopy = Arrays.copyOfRange(numbers, 1, 4); // indices 1-3
 
-// Filling arrays
-int[] filled = new int[5];
-Arrays.fill(filled, 42); // All elements become 42
+        // Filling arrays with a value
+        int[] filled = new int[5];
+        Arrays.fill(filled, 42);
+        System.out.println("Filled: " + Arrays.toString(filled)); // [42, 42, 42, 42, 42]
 
-// Comparing arrays
-int[] other = {1, 2, 5, 8, 9};
-boolean equal = Arrays.equals(numbers, other); // true
-
-// Converting to string representation
-System.out.println(Arrays.toString(numbers)); // [1, 2, 5, 8, 9]
+        // Comparing arrays for equality
+        int[] other = {1, 2, 5, 8, 9};
+        boolean areEqual = Arrays.equals(numbers, other);
+        System.out.println("Arrays equal: " + areEqual); // true
+    }
+}
 ```
 
-### Example 2: Matrix Operations
+## Working with Multi-dimensional Arrays
+
+For 2D arrays, use specialized methods:
 
 ```java
+import java.util.Arrays;
+
 public class MatrixDemo {
     public static void main(String[] args) {
-        int[][] matrix1 = {
+        int[][] matrix = {
             {1, 2, 3},
-            {4, 5, 6}
+            {4, 5, 6},
+            {7, 8, 9}
         };
 
-        int[][] matrix2 = {
-            {7, 8, 9},
-            {1, 2, 3}
-        };
+        // Display 2D array
+        System.out.println("Matrix:");
+        for (int[] row : matrix) {
+            System.out.println(Arrays.toString(row));
+        }
 
-        // Matrix addition
-        int[][] result = addMatrices(matrix1, matrix2);
+        // Or use deepToString for nested arrays
+        System.out.println("Deep string: " + Arrays.deepToString(matrix));
+
+        // Matrix operations example
+        int[][] result = addMatrices(matrix, matrix);
         printMatrix(result);
     }
 
@@ -94,40 +115,34 @@ public class MatrixDemo {
                 result[i][j] = a[i][j] + b[i][j];
             }
         }
-
         return result;
     }
 
     public static void printMatrix(int[][] matrix) {
         for (int[] row : matrix) {
-            for (int element : row) {
-                System.out.print(element + " ");
-            }
-            System.out.println();
+            System.out.println(Arrays.toString(row));
         }
     }
 }
 ```
 
----
-
 ## Hands-On Practice
 
 {: .important }
-**Try This:** Create a program that analyzes an array of integers:
+**Try This:** Create a comprehensive array analyzer that demonstrates multiple array operations:
 
 ```java
 public class ArrayAnalyzer {
     public static void main(String[] args) {
         int[] data = {12, 5, 8, 130, 44, 25, 16, 9, 55};
 
-        // TODO: Find and print:
-        // 1. Array length
-        // 2. Sum and average
-        // 3. Maximum and minimum values
-        // 4. Count of even and odd numbers
-        // 5. Create a new array with values doubled
-        // 6. Sort the original array and print it
+        // TODO: Implement the following analysis:
+        // 1. Display original array and its length
+        // 2. Calculate sum and average
+        // 3. Find maximum and minimum values
+        // 4. Count even and odd numbers
+        // 5. Create a doubled array
+        // 6. Sort and display the sorted array
 
         System.out.println("Array analysis complete!");
     }
@@ -144,10 +159,11 @@ public class ArrayAnalyzer {
     public static void main(String[] args) {
         int[] data = {12, 5, 8, 130, 44, 25, 16, 9, 55};
 
+        // 1. Display original array
         System.out.println("Original array: " + Arrays.toString(data));
         System.out.println("Array length: " + data.length);
 
-        // Sum and average
+        // 2. Sum and average
         int sum = 0;
         for (int value : data) {
             sum += value;
@@ -155,16 +171,16 @@ public class ArrayAnalyzer {
         double average = (double) sum / data.length;
         System.out.printf("Sum: %d, Average: %.2f%n", sum, average);
 
-        // Maximum and minimum
+        // 3. Maximum and minimum
         int max = data[0];
         int min = data[0];
         for (int value : data) {
-            if (value > max) max = value;
-            if (value < min) min = value;
+            max = Math.max(max, value);
+            min = Math.min(min, value);
         }
         System.out.printf("Maximum: %d, Minimum: %d%n", max, min);
 
-        // Count even and odd
+        // 4. Count even and odd
         int evenCount = 0, oddCount = 0;
         for (int value : data) {
             if (value % 2 == 0) {
@@ -175,14 +191,14 @@ public class ArrayAnalyzer {
         }
         System.out.printf("Even numbers: %d, Odd numbers: %d%n", evenCount, oddCount);
 
-        // Create doubled array
+        // 5. Create doubled array
         int[] doubled = new int[data.length];
         for (int i = 0; i < data.length; i++) {
             doubled[i] = data[i] * 2;
         }
         System.out.println("Doubled array: " + Arrays.toString(doubled));
 
-        // Sort and print
+        // 6. Sort original array
         Arrays.sort(data);
         System.out.println("Sorted array: " + Arrays.toString(data));
 
@@ -193,21 +209,22 @@ public class ArrayAnalyzer {
 
 </details>
 
----
-
-## Key Differences from JavaScript
+## Key Differences from JavaScript Arrays
 
 {: .highlight-title }
 
 > Important Distinctions
 >
-> 1. **Boolean Conditions**: Must be actual `boolean` values, no truthy/falsy
-> 2. **Array Size**: Fixed at creation time, use `.length` (property, not method)
-> 3. **Array Types**: All elements must be the same type
-> 4. **Bounds Checking**: Automatic - throws exception for invalid indices
-> 5. **Enhanced For Loop**: Use `for (type var : collection)` instead of `for...of`
-> 6. **Switch Fall-through**: Remember `break` statements
+> **Static vs Dynamic**: Java arrays have fixed size; JavaScript arrays are dynamic
+>
+> **Type Safety**: Java arrays hold only one type; JavaScript arrays are mixed-type
+>
+> **Method Location**: Java uses `Arrays.method(array)`, JavaScript uses `array.method()`
+>
+> **Length Property**: Java uses `.length` (field), JavaScript uses `.length` (property)
+>
+> **Bounds Checking**: Java throws exceptions for invalid indices; JavaScript returns `undefined`
 
 {: .fs-2 }
-[Previous: 1.1 Java Basics - Types, Variables & Syntax](1.1-basics.md){: .btn .btn-outline }
-[Next: 1.3 Methods & Scope](1.3-methods-scope.md){: .btn .btn-outline }
+[Previous: 03.2 Multi-dimensional Arrays](../03.2-multidimensional-arrays/index.md){: .btn .btn-outline }
+[Next: Module 04: Object-Oriented Programming](../../04-oop/index.md){: .btn .btn-outline }

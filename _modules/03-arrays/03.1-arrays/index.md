@@ -1,8 +1,8 @@
 ---
 layout: default
-title: 03.4 Arrays
-parent: "Module 03: Primitive Data Types, Variables & Arrays"
-nav_order: 4
+title: 03.1 Arrays
+parent: "Module 03: Arrays"
+nav_order: 1
 ---
 
 ## Arrays

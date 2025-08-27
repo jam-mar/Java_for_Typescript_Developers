@@ -1,8 +1,8 @@
 ---
 layout: default
-title: 03.4 Multi-dimensional Arrays
-parent: "Module 03: Primitive Data Types, Variables & Arrays"
-nav_order: 4
+title: 03.2 Multi-dimensional Arrays
+parent: "Module 03: Arrays"
+nav_order: 2
 ---
 
 ### Multi-dimensional Array Literals
